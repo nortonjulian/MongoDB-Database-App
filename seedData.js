@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import dotenv from 'dotenv/config';
 import Post from './models/Post.js';
 import User from './models/User.js'; // Import the User model
 
