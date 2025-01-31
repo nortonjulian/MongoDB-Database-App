@@ -10,8 +10,7 @@ const postSchema = new mongoose.Schema({
         required: true
     },
     author: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
+        type: 'String',
         required: true
     },
     datePosted: {
@@ -22,4 +21,4 @@ const postSchema = new mongoose.Schema({
 
 const Post = mongoose.model('Post', postSchema)
 
-module.exports = Post;
+export default Post;

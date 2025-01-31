@@ -11,7 +11,7 @@ const commentSchema = new mongoose.Schema({
         required: true
     },
     author: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: 'String',
         ref: 'User',
         required: true
     },
@@ -23,4 +23,4 @@ const commentSchema = new mongoose.Schema({
 
 const Comment = mongoose.model('Comment', commentSchema)
 
-module.exports = Comment;
+export default Comment;
